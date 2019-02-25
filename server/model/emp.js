@@ -1,5 +1,5 @@
 var {mongoose} = require('../db/mongoose');
-var empSchema = new mongoose.Schema({
+var Emp = mongoose.model('Emp',{
     id: {
         type: Number
     },
@@ -17,9 +17,7 @@ var empSchema = new mongoose.Schema({
         type: String,
         default: 'no dept'
     }
-});
-
-var Emp = mongoose.model('Emp', empSchema);
+} );
 module.exports = {
     Emp
 }
