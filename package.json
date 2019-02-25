@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "expect": "^24.1.0",
     "express": "^4.16.4",
     "mongodb": "^3.1.13",
-    "mongoose": "^5.4.14"
-  }
+    "mongoose": "^5.4.14",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.2",
+    "heroku": "^7.22.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.1"
+  },
+  "scripts": {
+    "start":"node server/server.js",
+    "test": "mocha"
+  },"engines": {
+    "node":"11.6.0"
+  },
+  "author": "",
+  "license": "ISC"
 }

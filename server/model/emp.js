@@ -18,6 +18,7 @@ var empSchema = new mongoose.Schema({
         default: 'no dept'
     }
 });
+
 var Emp = mongoose.model('Emp', empSchema);
 module.exports = {
     Emp
